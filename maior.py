@@ -7,16 +7,19 @@ elemento.
 * if: 1
 """
 
+ns = [int(x) for x in input("ns: ").split(",")]
+
 def maxarg(lst):
-    for i, x in enumerate(lst):
-        if not lst:
-            if x > max_value:
-                max_pos = 0
-                max_pos = i
-                max_value = lst[0]
-                max_value = x
-                ns = [int(x) for x in input("ns: ").split(",")]
-                pos, valor = maxarg(ns)
-                print(f"maior valor = {valor}, posicao = {pos + 1}o")
-                return (max_pos, max_value)
-                return None
+     max_value = lst[0]
+     max_pos = 0
+     
+     for i, x in enumerate(lst):
+        if x > max_value:
+           max_value = x
+           max_pos = i
+     return (max_pos, max_value)
+
+pos, valor = maxarg(ns)
+           
+
+print(f"maior valor = {valor}, posicao = {pos + 1}o")
