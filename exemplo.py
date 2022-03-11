@@ -7,11 +7,11 @@ Crie um programa que peça dois números para o usuário e mostre o qual é o ma
 
 a = int(input("a: "))
 b = int(input("b: "))
-elif a > b:
-    elif b > a:
-        else:
-            if a > b:
-                if b > a:
-                    print(f"o maior numero e o a = {a}")
-                    print(f"o maior numero e o b = {b}")
-                    print(f"os numeros sao iguais")
+# if b > a:
+if a > b:
+    print(f"o maior número é o a = {a}")
+# elif a > b:
+elif b > a:
+    print(f"o maior número é o b = {b}")
+else:
+    print(f"os números são iguais")
